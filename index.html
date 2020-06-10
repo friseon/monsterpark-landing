@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/common.css">
+    <link rel="stylesheet" href="./assets/styles/desktop.css">
+    <link rel="stylesheet" href="./assets/styles/pad.css">
+    <link rel="stylesheet" href="./assets/styles/phone.css">
+    <title>Монстропарк</title>
+</head>
+
+<body>
+    <div class="entertainment">
+        <div id="canvas"></div>
+    </div>
+    <header class="page-header">
+        <div class="page-header__name">
+            <h1 class="name">Монстропарк</h1>
+        </div>
+        <div class="page-menu">
+            <div class="main-menu main-menu_large">
+                <ul class="main-menu__list">
+                    <li class="main-menu__item main-menu__item_active">
+                        <a class="link main-menu__link" href="./index.html">Главная</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="link main-menu__link" href="./reserves.html">Заповедники</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="link main-menu__link" href="./monsters.html">Монстры</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="link main-menu__link" href="./tickets.html">Билеты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-menu main-menu_phone">
+                <div class="main-menu__buttons">
+                    <button class="main-menu__button">menu</button>
+                </div>
+                <ul class="main-menu__list main-menu__list_hidden">
+                    <li class="main-menu__item main-menu__item_active">
+                        <a class="link main-menu__link" href="./index.html">Главная</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="link main-menu__link" href="./reserves.html">Заповедники</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="link main-menu__link" href="./monsters.html">Монстры</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="link main-menu__link" href="./tickets.html">Билеты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="page-content">
+        <section class="section">
+            <div class="informer">
+                <div class="informer__column">
+                    <h2>Заповедники</h2>
+                    <div class="informer__container">
+                        <p class="informer__text">
+                            «МОНСТРОПАРК» – это заповедник для чудовищ, где монстры свободно обитают на своей территории и ни в чем не нуждаются. Парк открыт для посещений, а монстры с радостью встречают новых гостей. Но вам стоит приходить ровно к двенадцати ночи, если хотите увидеть
+                            хоть одного бодрствующего жителя парка.
+                        </p>
+                    </div>
+                    <div class="informer__container button-container">
+                        <button class="button">Подробнее</button>
+                    </div>
+                </div>
+                <div class="informer__column informer__column_right">
+                    <div class="informer__image">
+                        <img src="./assets/images/reserve_card.png" alt="reserve">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <h2>Наши события</h2>
+            <div class="gallery">
+                <div class="gallery-card card">
+                    <div class="card-image"></div>
+                    <div class="card-title"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section section__black section__rows">
+            <h2>Экскурсии</h2>
+
+            <div class="informer">
+                <div class="informer__column informer__column_left">
+                    <div class="informer__image">
+                        <img src="./assets/images/mountain.png" alt="mountain">
+                    </div>
+                </div>
+                <div class="informer__column">
+                    <div class="informer__container">
+                        <h3 class="informer__title">Гора-монстр</h3>
+                        <p class="informer__text">
+                            Экскурсия представляет собой поход к одному из опасных обитателей парка – гигантской каменной скале. Монстр не видит вас и не имеет способности двигаться, но всегда очень голоден. К зоне с монстром категоричски воспрещается подходить без сопровождения
+                            опытного гида.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="informer">
+                <div class="informer__column">
+                    <div class="informer__container">
+                        <h3 class="informer__title">Монстр-рука</h3>
+                        <p class="informer__text">
+                            В ходе этой экскурсии посетители парка нанесут визит самому буйному жителю парка – монстру-руке. Монстр считается опасным из-за острых когтей и привычки хватать все, до чего он смог дотянуться.
+                        </p>
+                    </div>
+                </div>
+                <div class="informer__column informer__column_right">
+                    <div class="informer__image">
+                        <img src="./assets/images/hand.png" alt="hand">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <h2>Контакты</h2>
+        <div class="footer-content">
+            <table class="footer-table">
+                <tr>
+                    <th>Адрес</th>
+                    <td>ул. Страха стр. 66</td>
+                </tr>
+                <tr>
+                    <th>Телефоны</th>
+                    <td>
+                        <p class="footer-table__text">+7 (495) 666-13-00 </p>
+                        <p class="footer-table__text">+7 (499) 128-82-10</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>E-mail</th>
+                    <td>Monsterpark.com</td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+    <script src="./assets/js/p5.min.js"></script>
+    <script src="./assets/js/sketch.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
