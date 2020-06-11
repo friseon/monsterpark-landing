@@ -1,4 +1,16 @@
 @media screen and (max-width: 600px) {
+    h2 {
+        font-size: 24px;
+    }
+    .page-paddings {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .page-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
     .main-menu_large {
         display: none;
     }
@@ -28,5 +40,32 @@
     .main-menu_phone .main-menu__list_hidden {
         height: 0;
         opacity: 0;
+    }
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+    .informer {
+        flex-direction: column;
+    }
+    .informer__column {
+        width: 100%;
+        padding: 12px 0;
+        box-sizing: border-box;
+    }
+    .informer__column_right {
+        margin-left: 0;
+    }
+    .informer__image {
+        height: 170px;
+        width: 100%;
+    }
+    .page-footer {
+        margin-bottom: 0;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+    .footer__contacts {
+        width: 100%;
     }
 }

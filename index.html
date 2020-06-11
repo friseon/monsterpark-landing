@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/font.css">
     <link rel="stylesheet" href="./assets/styles/common.css">
     <link rel="stylesheet" href="./assets/styles/desktop.css">
     <link rel="stylesheet" href="./assets/styles/pad.css">
@@ -16,7 +16,7 @@
     <div class="entertainment">
         <div id="canvas"></div>
     </div>
-    <header class="page-header">
+    <header class="page-header page-paddings">
         <div class="page-header__name">
             <h1 class="name">Монстропарк</h1>
         </div>
@@ -59,7 +59,7 @@
         </div>
     </header>
     <main class="page-content">
-        <section class="section">
+        <section class="section page-paddings">
             <div class="informer">
                 <div class="informer__column">
                     <h2>Заповедники</h2>
@@ -74,29 +74,69 @@
                     </div>
                 </div>
                 <div class="informer__column informer__column_right">
-                    <div class="informer__image">
-                        <img src="./assets/images/reserve_card.png" alt="reserve">
-                    </div>
+                    <div class="informer__image reserve-card"></div>
                 </div>
             </div>
         </section>
-        <section class="section">
+        <section class="section section_gallery page-paddings">
             <h2>Наши события</h2>
             <div class="gallery">
                 <div class="gallery-card card">
-                    <div class="card-image"></div>
-                    <div class="card-title"></div>
+                    <div class="card__image">
+                        <img class="image-card" src="./assets//images/card_1.jpg" alt="">
+                    </div>
+                    <p class="card__title">
+                        Пати с монстрами
+                    </p>
+                </div>
+                <div class="gallery-card card">
+                    <div class="card__image">
+                        <img class="image-card" src="./assets//images/card_2.jpg" alt="">
+                    </div>
+                    <p class="card__title">
+                        Покорми монстров
+                    </p>
+                </div>
+                <div class="gallery-card card">
+                    <div class="card__image">
+                        <img class="image-card" src="./assets//images/card_3.jpg" alt="">
+                    </div>
+                    <p class="card__title">
+                        Помоги монстрам
+                    </p>
+                </div>
+                <div class="gallery-card card">
+                    <div class="card__image">
+                        <img class="image-card" src="./assets//images/card_3.jpg" alt="">
+                    </div>
+                    <p class="card__title">
+                        Лекция
+                    </p>
+                </div>
+                <div class="gallery-card card">
+                    <div class="card__image">
+                        <img class="image-card" src="./assets//images/card_4.jpg" alt="">
+                    </div>
+                    <p class="card__title">
+                        Побори свой страх
+                    </p>
+                </div>
+                <div class="gallery-card card">
+                    <div class="card__image">
+                        <img class="image-card" src="./assets//images/card_5.jpg" alt="">
+                    </div>
+                    <p class="card__title">
+                        Стань монстром
+                    </p>
                 </div>
             </div>
         </section>
-        <section class="section section__black section__rows">
+        <section class="section section__black section__rows page-paddings">
             <h2>Экскурсии</h2>
 
             <div class="informer">
                 <div class="informer__column informer__column_left">
-                    <div class="informer__image">
-                        <img src="./assets/images/mountain.png" alt="mountain">
-                    </div>
+                    <div class="informer__image mountain-card"></div>
                 </div>
                 <div class="informer__column">
                     <div class="informer__container">
@@ -118,33 +158,34 @@
                     </div>
                 </div>
                 <div class="informer__column informer__column_right">
-                    <div class="informer__image">
-                        <img src="./assets/images/hand.png" alt="hand">
-                    </div>
+                    <div class="informer__image hand-card"></div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-paddings">
         <h2>Контакты</h2>
         <div class="footer-content">
-            <table class="footer-table">
-                <tr>
-                    <th>Адрес</th>
-                    <td>ул. Страха стр. 66</td>
-                </tr>
-                <tr>
-                    <th>Телефоны</th>
-                    <td>
-                        <p class="footer-table__text">+7 (495) 666-13-00 </p>
-                        <p class="footer-table__text">+7 (499) 128-82-10</p>
-                    </td>
-                </tr>
-                <tr>
-                    <th>E-mail</th>
-                    <td>Monsterpark.com</td>
-                </tr>
-            </table>
+            <div class="footer__contacts contacts">
+                <div class="contacts__row">
+                    <div class="contacts__cell contacts__title">Адрес</div>
+                    <div class="contacts__cell contacts__info">ул. Страха стр. 66</div>
+                </div>
+                <div class="contacts__row">
+                    <div class="contacts__cell contacts__title">Телефоны</div>
+                    <div class="contacts__cell contacts__info">
+                        <p class="contacts__text">+7 (495) 666-13-00 </p>
+                        <p class="contacts__text">+7 (499) 128-82-10</p>
+                    </div>
+                </div>
+                <div class="contacts__row">
+                    <div class="contacts__cell contacts__title">E-mail</div>
+                    <div class="contacts__cell contacts__info">Monsterpark.com</div>
+                </div>
+            </div>
+            <div class="footer__logo">
+                <div class="logo"></div>
+            </div>
         </div>
     </footer>
     <script src="./assets/js/p5.min.js"></script>

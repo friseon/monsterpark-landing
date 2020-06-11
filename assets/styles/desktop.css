@@ -1,1 +1,9 @@
-@media screen and (min-width: 1367px) {}
+@media screen and (min-width: 1367px) {
+    .page-paddings {
+        padding-left: 115px;
+        padding-right: 115px;
+    }
+    .main-menu_large .main-menu__list {
+        margin-right: -12px;
+    }
+}
