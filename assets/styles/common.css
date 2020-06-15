@@ -306,6 +306,93 @@ h2.header_margin-bottom {
 
 .main-menu_phone {
     display: none;
+    height: 40px;
+}
+
+.main-menu__container {
+    display: flex;
+    z-index: 100;
+}
+
+.main-menu_phone .main-menu__list {
+    position: fixed;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 90;
+    height: 100%;
+    opacity: 1;
+    transition: .5s;
+    transition-delay: .2s;
+    overflow: hidden;
+    background-color: rgb(35, 19, 74);
+}
+
+.main-menu_phone .main-menu__list_hidden {
+    height: 0;
+    opacity: 0;
+}
+
+.main-menu__button {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    width: 40px;
+    outline: none;
+}
+
+.main-menu__button_close .menu__icon {
+    background: transparent;
+}
+
+.main-menu__button_close .menu__icon::before,
+.main-menu__button_close .menu__icon::after {
+    top: 0;
+}
+
+.main-menu__button_close .menu__icon::after {
+    transform: rotate(-45deg);
+}
+
+.main-menu__button_close .menu__icon::before {
+    transform: rotate(45deg);
+}
+
+.menu__icon {
+    display: block;
+    position: relative;
+    background: rgba(255, 255, 255, 1);
+    width: 90%;
+    height: 4px;
+    transition: .4s;
+    border-radius: 4px;
+}
+
+.menu__icon::after,
+.menu__icon::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, 1);
+    width: 100%;
+    height: 4px;
+    transition: .4s;
+    border-radius: 4px;
+}
+
+.menu__icon::after {
+    top: 8px;
+}
+
+.menu__icon::before {
+    top: -8px;
 }
 
 .main-menu_large .main-menu__list {
