@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/font.css">
     <link rel="stylesheet" href="./assets/styles/common.css">
-    <link rel="stylesheet" media="screen and (min-width: 1367px)" href="./assets/styles/desktop.css">
-    <link rel="stylesheet" media="screen and (max-width: 1366px)" href="./assets/styles/pad.css">
-    <link rel="stylesheet" media="screen and (max-width: 600px)" href="./assets/styles/phone.css">
+    <link rel="stylesheet" href="./assets/styles/desktop.css">
+    <link rel="stylesheet" href="./assets/styles/pad.css">
+    <link rel="stylesheet" href="./assets/styles/phone.css">
     <title>Монстропарк - Заповедники</title>
 </head>
 
 <body>
-    <header class="page-header">
+    <header class="page-header page-paddings">
         <div class="page-header__name">
             <h1 class="name">Монстропарк</h1>
         </div>
@@ -54,6 +55,48 @@
             </div>
         </div>
     </header>
+    <main class="page-content">
+        <section class="section page-paddings section_rows">
+            <h2>Заповедник</h2>
+            <div class="informer">
+                <div class="informer__column informer__column_top">
+                    <h3>История</h3>
+                    <div class="informer__container">
+                        <p class="informer__text">
+                            Заповедник чудовищ «МОНСТРОПАРК» — это место, где живут различные виды монстров из разных частей мира. Все обитатели заповедника найдены не только в лесах или на темных переулках улиц, но и прямо в домах и квартирах. Вы задавались вопросами: «Что шуршит
+                            у меня под кроватью?» или «Куда пропала еда из холодильника?». Если вы хотите познакомиться с виновниками этих ситуаций, то стоит посетить наш парк.
+                        </p>
+                    </div>
+                </div>
+                <div class="informer__column informer__column_right">
+                    <div class="informer__image reserve-history-card"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section page-paddings section_rows section_black">
+            <h3 class="header_margin-bottom">Карта</h3>
+            <div class="reserve-big-map"></div>
+        </section>
+        <section class="section section_margin-top page-paddings section_rows section_black">
+            <h3 class="header_margin-bottom">Интерактивная карта</h3>
+            <div class="informer">
+                <div class="informer__column informer__column_left">
+                    <div class="informer__image reserve-map-card"></div>
+                </div>
+                <div class="informer__column">
+                    <div class="informer__container">
+                        <p class="informer__text">
+                            Интерактивная веб-карта заповедника чудовищ МОНСТРОПАРКА поможет посетителям ориентироваться в пространстве этого места. Карта предоставляет короткую, но важную информацию об основных зонах заповедника. Кроме того, в качестве развлечения можно пройти
+                            короткий квест, спрятанный на карте.
+                        </p>
+                    </div>
+                    <div class="informer__container button-container">
+                        <button class="button">Перейти</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer class="page-footer page-paddings">
         <h2>Контакты</h2>
         <div class="footer-content">

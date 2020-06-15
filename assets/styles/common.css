@@ -19,7 +19,22 @@ h2 {
     font-weight: normal;
     font-size: 36px;
     line-height: 44px;
+    margin: 0 0 20px;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 29px;
+    line-height: 35px;
     margin: 0;
+}
+
+h3.header_margin-bottom {
+    margin-bottom: 70px;
+}
+
+h2.header_margin-bottom {
+    margin-bottom: 24px;
 }
 
 .entertainment {
@@ -58,15 +73,19 @@ h2 {
     flex-direction: column;
 }
 
-.section__black {
+.section_black {
     background: rgb(255, 255, 255);
     background: linear-gradient(0, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 51%, rgba(0, 0, 0, 1) 70%, rgba(255, 255, 255, 0) 100%);
     padding-bottom: 300px;
     margin-bottom: -300px;
 }
 
-.section__rows {
+.section_rows {
     flex-direction: column;
+}
+
+.section_margin-top {
+    margin-top: 100px;
 }
 
 
@@ -133,6 +152,10 @@ h2 {
     justify-content: flex-start;
 }
 
+.informer__column_top {
+    justify-content: flex-start;
+}
+
 .informer__container {
     display: flex;
     flex-direction: column;
@@ -150,12 +173,29 @@ h2 {
     background-image: url(../images/reserve_card.png);
 }
 
+.reserve-history-card {
+    background-image: url(../images/reserve_history.png);
+}
+
 .hand-card {
     background-image: url(../images/hand.png);
 }
 
 .mountain-card {
     background-image: url(../images/mountain.png);
+}
+
+.reserve-map-card {
+    background-image: url(../images/reserve_map.png);
+}
+
+.reserve-big-map {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 50%;
+    width: 100%;
+    background-image: url(../images/big-map.png);
 }
 
 
