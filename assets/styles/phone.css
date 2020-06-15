@@ -62,6 +62,17 @@
         height: 170px;
         width: 100%;
     }
+    .gallery_monsters .gallery-card {
+        border-radius: 12px;
+    }
+    .gallery_monsters .card__info {
+        padding: 6px 12px;
+    }
+    .table_tickets td {
+        height: 40px;
+        padding: 4px 6px;
+        font-size: 14px;
+    }
     .button {
         font-size: 18px;
         padding: 12px 24px;

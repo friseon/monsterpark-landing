@@ -20,6 +20,11 @@
     .main-menu__item {
         font-size: 18px;
     }
+    .table_tickets td {
+        height: 60px;
+        padding: 8px 12px;
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 1024px) {

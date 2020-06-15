@@ -342,6 +342,40 @@ h2.header_margin-bottom {
 }
 
 
+/* table tickets */
+
+.table_tickets {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 32px;
+}
+
+.table_tickets td {
+    height: 115px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    padding: 12px 24px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.table_tickets tr:first-child td {
+    border-top: none;
+}
+
+.table_tickets tr:last-child td {
+    border-bottom: none;
+}
+
+.table_tickets td:first-child {
+    border-left: none;
+}
+
+.table_tickets td:last-child {
+    border-right: none;
+}
+
+
 /* footer */
 
 .page-footer {
