@@ -9,9 +9,13 @@
     .main-menu_large .main-menu__list {
         margin-right: -12px;
     }
-    .gallery {
+    .gallery_events {
         grid-template-columns: 1fr 1fr;
         grid-auto-rows: 300px;
+    }
+    .gallery_monsters .card__info {
+        padding: 16px 20px;
+        font-size: 14px;
     }
     .main-menu__item {
         font-size: 18px;
@@ -19,6 +23,10 @@
 }
 
 @media screen and (max-width: 1024px) {
+    .gallery_monsters {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 300px;
+    }
     .main-menu_large {
         display: none;
     }

@@ -6,6 +6,10 @@ html {
     color: #fff;
     font-family: 'Montserrat Alternates', sans-serif;
     font-style: normal;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 h1 {
@@ -40,6 +44,7 @@ h2.header_margin-bottom {
 .entertainment {
     width: 100%;
     height: 400px;
+    min-height: 400px;
     background-color: #000;
 }
 
@@ -107,7 +112,7 @@ h2.header_margin-bottom {
     flex-direction: column;
 }
 
-.gallery-card:hover .image-card {
+.gallery-card_event.gallery-card:hover .image-card {
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
 }
@@ -125,6 +130,47 @@ h2.header_margin-bottom {
 .image-card {
     height: 100%;
     transition: all .2s ease-out;
+}
+
+.gallery_monsters {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px 120px;
+    grid-auto-flow: dense;
+    grid-auto-rows: 500px;
+    padding-top: 0;
+}
+
+.gallery_monsters .gallery-card {
+    border: 2px solid #fff;
+    border-radius: 45px;
+    width: 100%;
+}
+
+.gallery_monsters .card__info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 40px;
+}
+
+.gallery_monsters .card__info-row {
+    display: flex;
+}
+
+.gallery_monsters .card__info-title {
+    margin-right: 6px;
+}
+
+.gallery_monsters .card__info-description_bold {
+    font-weight: bold;
+}
+
+.gallery_monsters .card__image_1 {
+    background-image: url(../images/monsters/longus.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
