@@ -41,6 +41,10 @@ h2.header_margin-bottom {
     margin-bottom: 24px;
 }
 
+.cursor_hand {
+    cursor: url(../images/cursor-hand.png), -moz-zoom-in, auto;
+}
+
 .entertainment {
     width: 100%;
     height: 600px;
@@ -445,7 +449,8 @@ h2.header_margin-bottom {
     font-weight: bold;
 }
 
-.main-menu__link {
+.main-menu__link,
+.main-menu__link:hover {
     text-decoration: none;
     color: #fff;
 }
