@@ -7,3 +7,10 @@
         margin-right: -12px;
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .entertainment {
+        height: 700px;
+        min-height: 700px;
+    }
+}

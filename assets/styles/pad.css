@@ -1,4 +1,8 @@
 @media screen and (max-width: 1366px) {
+    .entertainment {
+        height: 500px;
+        min-height: 500px;
+    }
     h2 {
         font-size: 24px;
     }
