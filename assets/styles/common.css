@@ -41,10 +41,6 @@ h2.header_margin-bottom {
     margin-bottom: 24px;
 }
 
-.cursor_hand {
-    cursor: url(../images/cursor-hand.png), -moz-zoom-in, auto;
-}
-
 .entertainment {
     width: 100%;
     height: 600px;
@@ -280,7 +276,7 @@ h2.header_margin-bottom {
     color: #fff;
     outline: none;
     transition: transform .2s ease-out;
-    cursor: pointer;
+    cursor: url(./../images/hand1.png) 24 12, pointer;
 }
 
 .button:hover {
@@ -453,6 +449,7 @@ h2.header_margin-bottom {
 .main-menu__link:hover {
     text-decoration: none;
     color: #fff;
+    cursor: url(./../images/hand1.png) 24 12, pointer;
 }
 
 
